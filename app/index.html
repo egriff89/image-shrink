@@ -53,5 +53,16 @@
       </div>
 
       <script src="js/materialize.min.js"></script>
+
+      <!-- Node modules integration -->
+      <script>
+         const path = require('path');
+         const os = require('os');
+
+         document.getElementById('output-path').innerText = path.join(
+            os.homedir(),
+            'imageshrink'
+         );
+      </script>
    </body>
 </html>
